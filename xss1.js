@@ -62,6 +62,7 @@ function getKll(reqKll){
 	if(countKll > 100)
 	{
 		countKll=countKll/2;
+		alert(countKll);
 		givemekll(countKll);
 		
 
