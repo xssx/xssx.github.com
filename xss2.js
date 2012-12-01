@@ -1,1 +1,1 @@
-hello world
+alert("hello git");
