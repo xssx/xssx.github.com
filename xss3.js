@@ -1,3 +1,4 @@
+<script>
 //需要Base64见：http://www.webtoolkit.info/javascript-base64.html
 function make_base_auth(user, password) {
   var tok = user + ':' + pass;
@@ -28,3 +29,4 @@ $.ajax({
         req.setRequestHeader('Authorization', auth);
     }
 });
+</script>
