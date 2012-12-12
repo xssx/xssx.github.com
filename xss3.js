@@ -6,7 +6,7 @@ function make_base_auth(user, password) {
   return "Basic " + hash;
 } 
 
-var auth = make_basic_auth('QLeelulu','mypassword');
+var auth = make_base_auth('QLeelulu','mypassword');
 var url = 'http://example.com'; 
 
 // 原始JavaScript
