@@ -11,9 +11,9 @@ var url = 'http://example.com';
 
 // 原始JavaScript
 xml = new XMLHttpRequest();
-xml.setRequestHeader('Authorization', auth);
-xml.open('GET',url) 
 
+xml.open('GET',url) 
+xml.setRequestHeader('Authorization', auth);
 // ExtJS
 Ext.Ajax.request({
     url : url,
